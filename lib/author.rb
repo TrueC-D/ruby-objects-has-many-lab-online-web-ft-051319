@@ -19,7 +19,10 @@ class Author
     a_post = Post.new(post_title)
     @posts << a_post
     a_post.author = self
-    
+  end
+  
+  def self.post_count
+    Post.all.length
   end
   
 end

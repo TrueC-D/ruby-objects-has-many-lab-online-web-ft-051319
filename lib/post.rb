@@ -6,6 +6,7 @@ class Post
   def initialize (title)
     @title = title
     @@all << self
+    @artist = self.artist
   end
   
   def self.all
